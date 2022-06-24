@@ -1,10 +1,12 @@
-import React from 'react'
+import { Nav } from 'react-bootstrap'
 
 function header() {
   return (
-    <div>
-      <h2>Header</h2>
-    </div>
+    <Nav className="bg-dark" defaultActiveKey="/" as="ul">
+      <Nav.Item as="li">
+        <Nav.Link href="/">Active</Nav.Link>
+      </Nav.Item>
+    </Nav>
   )
 }
 
