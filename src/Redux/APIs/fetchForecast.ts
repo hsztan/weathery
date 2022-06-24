@@ -9,7 +9,8 @@ async function fetchForecast({ lat, lng }: Coords): Promise<any> {
     if (forecast) {
       response = await fetch(forecast);
       data = await response.json();
-      return data;
+      console.log(data.properties.periods);
+      return data.properties.periods;
     }
   } catch (error) {
     console.log(error);
