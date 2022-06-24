@@ -13,7 +13,6 @@ export default function forecast(state = {}, action: any) {
 }
 
 export const getForecast = (address: string) => async (dispatch: any) => {
-  console.log('getForecast');
   const coords = await fetchCoords(address);
   const forecast = await fetchForecast(coords);
   dispatch({ type: GET_FORECAST, payload: forecast });

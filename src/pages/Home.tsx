@@ -13,7 +13,6 @@ function Home() {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    console.log('handleSubmit');
     dispatch(getForecast(address) as any);
   }
 

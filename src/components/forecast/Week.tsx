@@ -5,7 +5,7 @@ import Day from './Day'
 function Week() {
   const forecast = useSelector((state: any) => state.forecast.forecast);
   return (
-    <CardGroup>
+    <CardGroup className='mt-4'>
       {forecast.map((day: any, i: number) => {
         return (
           <Row key={i} className="mx-auto justify-content-center mb-5">

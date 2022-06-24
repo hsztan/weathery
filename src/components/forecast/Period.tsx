@@ -4,10 +4,10 @@ import { FaThermometerThreeQuarters, FaWind, FaRegCompass } from 'react-icons/fa
 function Period({ weather }: any) {
   const { detailedForecast, name, temperature, windSpeed, windDirection, icon } = weather;
   return (
-    <Card style={{ width: '10rem' }} className="border border-white p-0 mx-0 bg-dark text-white">
-      <Card.Img variant="top" src={icon} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
+    <Card style={{ width: '10rem', borderRadius: '0' }} className="border border-dark p-1 mx-0 bg-dark text-white">
+      <Card.Img className='rounded-5' style={{ borderRadius: '15px' }} variant="top" src={icon} />
+      <Card.Body className='border-bottom border-white'>
+        <Card.Title className='text-center' style={{ height: '3rem' }}>{name}</Card.Title>
         <Card.Text>
           {detailedForecast}
         </Card.Text>
