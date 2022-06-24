@@ -1,11 +1,11 @@
+import { CardGroup, Card } from 'react-bootstrap'
 import Day from './Day'
 
 function Week() {
   return (
-    <div>
-      <h2>Week</h2>
+    <CardGroup>
       <Day />
-    </div>
+    </CardGroup>
   )
 }
 

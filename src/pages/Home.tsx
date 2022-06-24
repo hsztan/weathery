@@ -11,24 +11,18 @@ function Home() {
   const dispatch = useDispatch();
   const forecast = useSelector((state: any) => state.forecast);
 
-  const handleClick = (event: any) => {
-    console.log('handleClick');
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    console.log('handleSubmit');
     dispatch(getForecast(address) as any);
-  }
-
-  const handleChange = (event: any) => {
-    setAddress(event.target.value);
   }
 
   return (
     <div>
       <Header />
       <Week />
-      <AddressForm />
-      <form>
-        <input onChange={handleChange} name="address" type="text" placeholder="Enter address" value={address} />
-        <button onClick={handleClick} type='button'>Submit</button>
-      </form>
+      <AddressForm address={address} setAddress={setAddress } handleSubmit={ handleSubmit} />
+      
       <p>{ JSON.stringify(forecast)}</p>
       <Footer />
     </div>

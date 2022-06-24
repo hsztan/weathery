@@ -1,9 +1,11 @@
-import React from 'react'
+
+import Period from './Period'
 
 function Day() {
   return (
     <div>
-      <h2>Day</h2>
+      <Period />
+      <Period />
     </div>
   )
 }

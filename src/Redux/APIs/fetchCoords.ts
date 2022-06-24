@@ -22,7 +22,7 @@ async function fetchCoords(address: string): Promise<Coords> {
   // } catch (error) {
   //   console.log(error);
   // }
-  return { lat: 38.845985, lng: -74.92744 };
+  return { lat: 38.845989080537514, lng: -76.9274328556918 };
 }
 
 export default fetchCoords;
