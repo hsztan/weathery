@@ -11,7 +11,7 @@ function AddressForm({ address, handleSubmit, setAddress }: { address: string, s
           We'll never share your address with anyone else.
         </Form.Text>
       </Form.Group>
-      <Button className='text-center' variant="primary" type="submit">
+      <Button className='text-c' variant="primary" type="submit">
         Submit
       </Button>
     </Form>

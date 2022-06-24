@@ -8,7 +8,7 @@ function Week() {
     <CardGroup>
       {forecast.map((day: any, i: number) => {
         return (
-          <Row key={i} className="mx-auto mb-5">
+          <Row key={i} className="mx-auto justify-content-center mb-5">
             <Day day={day} />
           </Row>
         )
