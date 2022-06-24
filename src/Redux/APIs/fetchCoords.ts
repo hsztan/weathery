@@ -1,6 +1,6 @@
 import { Coords } from '../../types/types';
 
-async function getCoords(address: string): Promise<Coords> {
+async function fetchCoords(address: string): Promise<Coords> {
   //Hardcoded lat and lng for now for address: '4600 Silver Hill Rd, Washington, DC 20233'
   // try {
   //   const response = await fetch(
@@ -22,7 +22,7 @@ async function getCoords(address: string): Promise<Coords> {
   // } catch (error) {
   //   console.log(error);
   // }
-  return { lat: 38.845985, lng: -70.92744 };
+  return { lat: 38.845985, lng: -74.92744 };
 }
 
-export default getCoords;
+export default fetchCoords;

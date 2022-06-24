@@ -1,6 +1,6 @@
 import { Coords } from '../../types/types';
 
-async function getForecast({ lat, lng }: Coords): Promise<any> {
+async function fetchForecast({ lat, lng }: Coords): Promise<any> {
   console.log(lat, lng);
   try {
     const response = await fetch(
@@ -13,4 +13,4 @@ async function getForecast({ lat, lng }: Coords): Promise<any> {
   }
 }
 
-export default getForecast;
+export default fetchForecast;
