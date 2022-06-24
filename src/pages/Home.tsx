@@ -17,7 +17,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className='bg-secondary'>
       <Header />
       {forecast?.length > 0 ?
         <Week /> :

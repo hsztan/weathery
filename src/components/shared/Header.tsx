@@ -1,10 +1,11 @@
 import { Nav } from 'react-bootstrap'
+import { WiDayCloudyGusts } from 'react-icons/wi'
 
 function header() {
   return (
-    <Nav className="bg-dark" defaultActiveKey="/" as="ul">
+    <Nav className="bg-secondary" defaultActiveKey="/" as="ul">
       <Nav.Item as="li">
-        <Nav.Link href="/">Active</Nav.Link>
+        <Nav.Link className='text-dark' href="/"><WiDayCloudyGusts size={50} /></Nav.Link>
       </Nav.Item>
     </Nav>
   )
