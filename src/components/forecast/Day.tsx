@@ -1,11 +1,11 @@
 import Period from './Period'
 
 function Day({ day }: any) {
-  console.log(day)
+  const [morning, evening] = day;
   return (
     <>
-      <Period />
-      <Period />
+      <Period weather={morning} />
+      <Period weather={evening} />
     </>
   )
 }

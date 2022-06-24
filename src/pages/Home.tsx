@@ -17,8 +17,6 @@ function Home() {
     dispatch(getForecast(address) as any);
   }
 
-  console.log(forecast)
-
   return (
     <div>
       <Header />
