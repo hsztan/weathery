@@ -18,6 +18,7 @@ async function fetchForecast({ lat, lng }: Coords): Promise<any> {
     }
   } catch (error) {
     console.log(error);
+    return [];
   }
 }
 

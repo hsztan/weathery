@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getForecast } from '../Redux/forecast';
 import Header from '../components/shared/Header';
 import Week from '../components/forecast/Week';
@@ -15,11 +15,16 @@ function Home() {
     event.preventDefault();
     console.log('handleSubmit');
     dispatch(getForecast(address) as any);
-    console.log(forecast)
+  }
+
+  useEffect(() => {
     if (!forecast || forecast.length === 0) {
       setMessage('Please enter a valid address');
+    } else {
+      setMessage('');
     }
-  }
+  }, [forecast]);
+
 
   return (
     <div className='bg-secondary'>
