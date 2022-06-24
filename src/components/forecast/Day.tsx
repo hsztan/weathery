@@ -1,12 +1,12 @@
-import { CardGroup } from 'react-bootstrap'
+import { CardGroup, Row } from 'react-bootstrap'
 import Period from './Period'
 
 function Day() {
   return (
-    <CardGroup>
+    <Row className="mx-auto mb-5">
       <Period />
       <Period />
-    </CardGroup>
+    </Row>
   )
 }
 

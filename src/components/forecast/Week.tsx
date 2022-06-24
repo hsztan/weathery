@@ -6,6 +6,11 @@ function Week() {
     <CardGroup>
       <Day />
       <Day />
+      <Day />
+      <Day />
+      <Day />
+      <Day />
+      <Day />
     </CardGroup>
   )
 }
