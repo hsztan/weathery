@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { CardGroup } from 'react-bootstrap'
+import { CardGroup, Row } from 'react-bootstrap'
 import Day from './Day'
 
 function Week() {
@@ -7,7 +7,11 @@ function Week() {
   return (
     <CardGroup>
       {forecast.map((day: any, i: number) => {
-        return <Day key={i} day={day} />
+        return (
+          <Row className="mx-auto mb-5">
+            <Day key={i} day={day} />
+          </Row>
+        )
       })
       }
     </CardGroup>
