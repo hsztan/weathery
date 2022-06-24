@@ -1,4 +1,4 @@
-import { Coords } from '../types/types';
+import { Coords } from '../../types/types';
 
 async function getCoords(address: string): Promise<Coords> {
   //Hardcoded lat and lng for now for address: '4600 Silver Hill Rd, Washington, DC 20233'

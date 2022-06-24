@@ -1,4 +1,4 @@
-import { Coords } from '../types/types';
+import { Coords } from '../../types/types';
 
 async function getForecast({ lat, lng }: Coords): Promise<any> {
   console.log(lat, lng);
