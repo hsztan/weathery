@@ -2,7 +2,7 @@
   "name": "weathery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hsztan.github.io/weathery",
+  "homepage": "https://hsztan.github.io/weathery/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
