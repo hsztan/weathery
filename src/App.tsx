@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div data-testid="App" className="App">
       <Routes>
         <Route path="/weathery/" element={<Home />} />
       </Routes>
