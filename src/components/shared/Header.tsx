@@ -5,10 +5,10 @@ function header() {
   return (
     <Nav className="bg-secondary justify-content-center align-items-center" defaultActiveKey="/" as="ul">
       <Nav.Item as="li">
-        <Nav.Link className='text-white' href="/"><WiDayCloudyGusts size={50} /></Nav.Link>
+        <Nav.Link className='text-white' href="/weathery"><WiDayCloudyGusts size={50} /></Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link className='text-white fs-3 fw-bold text-center' href="/">Forecaster</Nav.Link>
+        <Nav.Link className='text-white fs-3 fw-bold text-center' href="/weathery">Forecaster</Nav.Link>
       </Nav.Item>
     </Nav>
   )
