@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { getForecast } from '../Redux/forecast';
+import Spinner from '../components/shared/Spinner';
 import Header from '../components/shared/Header';
 import Week from '../components/forecast/Week';
 import AddressForm from '../components/forecast/AddressForm';
@@ -36,11 +37,12 @@ function Home() {
       {forecast?.length > 0 ?
         <Week /> :
         null}
-      <AddressForm address={address}
-        setAddress={setAddress}
-        handleSubmit={handleSubmit}
-        message={message}
-      />
+      {isLoading ? <Spinner /> :
+        <AddressForm address={address}
+          setAddress={setAddress}
+          handleSubmit={handleSubmit}
+          message={message}
+        />}
     </div>
   )
 }
