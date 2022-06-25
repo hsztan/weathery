@@ -8,6 +8,7 @@
 - CSS
 - SASS
 - Javascript
+- Typescript
 - Git
 - React
 - Redux
@@ -15,9 +16,12 @@
 
 ## Live Demo
 
-(Live link)[https://weathery-henry.herokuapp.com/]
+[Live link](https://hsztan.github.io/weathery/)
 
 ## Setup
+
+- Start by opening this link in your browser: [https://cors-anywhere.herokuapp.com/](https://cors-anywhere.herokuapp.com/)
+- Click on accept demo.
 
 In the project directory, you can run:
 
