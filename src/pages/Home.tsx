@@ -8,21 +8,23 @@ import AddressForm from '../components/forecast/AddressForm';
 function Home() {
   const [address, setAddress] = useState('');
   const [message, setMessage] = useState('');
+  const [isDispatched, setIsDispatched] = useState(false);
   const dispatch = useDispatch();
   const forecast = useSelector((state: any) => state.forecast.forecast);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
     dispatch(getForecast(address) as any);
+    setIsDispatched(true);
   }
 
   useEffect(() => {
-    if (!forecast || forecast.length === 0) {
+    if ((!forecast || forecast.length === 0) && isDispatched) {
       setMessage('Please enter a valid address');
     } else {
       setMessage('');
     }
-  }, [forecast]);
+  }, [forecast, isDispatched]);
 
 
   return (
