@@ -13,7 +13,6 @@ function Home() {
   const dispatch = useDispatch();
   const forecast = useSelector((state: any) => state.forecast.forecast);
   const isLoading = useSelector((state: any) => state.forecast.isLoading);
-  console.log(forecast, isLoading);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
