@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap'
 
-function AddressForm({ address, handleSubmit, setAddress, message }: { address: string, setAddress: any, handleSubmit: (event: any) => void, message: string }) {
+function AddressForm({ address, handleSubmit, setAddress, message }: { address: string, setAddress: any, handleSubmit: (event: any) => void, message: any }) {
 
   return (
     <Form className='addressForm mx-auto p-5' onSubmit={handleSubmit}>
