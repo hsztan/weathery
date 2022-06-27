@@ -7,7 +7,7 @@ import Week from '../components/forecast/Week';
 import AddressForm from '../components/forecast/AddressForm';
 
 function Home() {
-  const corsMessage = (<p>This website needs cors-anywhere demo active to work < br /> please visit <a target="_blank" rel='noreferrer' href="https://cors-anywhere.herokuapp.com/" > cors - anywhere.herokuapp.com</a > to enable it</p>);
+  const corsMessage = (<p>This website needs cors-anywhere demo active to work < br /> please visit <a className="text-warning" target="_blank" rel='noreferrer' href="https://cors-anywhere.herokuapp.com/" > cors - anywhere.herokuapp.com</a > to enable it</p>);
   const [address, setAddress] = useState('');
   const [firstSubmit, setFirstSubmit] = useState(false);
   const [message, setMessage] = useState(corsMessage);
